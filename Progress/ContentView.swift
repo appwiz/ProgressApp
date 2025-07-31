@@ -24,6 +24,31 @@ struct ContentView: View {
         return try? modelContext.fetch(request).first
     }
     
+    private var taskSummary: (total: Int, done: Int, remaining: Int) {
+        let lines = noteContent.components(separatedBy: .newlines)
+        var total = 0
+        var done = 0
+        
+        for line in lines {
+            let trimmedLine = line.trimmingCharacters(in: .whitespaces)
+            
+            // Check if line contains a markdown task (- [ ] or - [x] or - [X])
+            let taskPattern = #"^\s*-\s*\[[ xX]?\]"#
+            if trimmedLine.range(of: taskPattern, options: .regularExpression) != nil {
+                
+                total += 1
+                
+                // Check if task is done [x] or [X]
+                if trimmedLine.range(of: #"^\s*-\s*\[[xX]\]"#, options: .regularExpression) != nil {
+                    done += 1
+                }
+            }
+        }
+        
+        let remaining = total - done
+        return (total: total, done: done, remaining: remaining)
+    }
+
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -52,6 +77,18 @@ struct ContentView: View {
                     .onChange(of: currentDate) { oldValue, newValue in
                         loadNote()
                     }
+                
+                // Task Summary Footer
+                VStack {
+                    let summary = taskSummary
+                    let summaryString = "\(summary.total) total, \(summary.done) done, \(summary.remaining) remain"
+                    Text(summaryString)
+                        .font(.system(.caption, design: .monospaced))
+                        .foregroundColor(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
+                        .padding(.vertical, 8)
+                }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -146,11 +183,17 @@ struct ContentView: View {
     private func saveNote() {
         let dateKey = Note.dateKey(for: currentDate)
         
+        // Calculate task summary
+        let summary = taskSummary
+        let summaryString = "\(summary.total) total, \(summary.done) done, \(summary.remaining) remain"
+        
         if let existingNote = currentNote {
             existingNote.content = noteContent
             existingNote.lastModified = Date()
+            existingNote.taskSummary = summaryString
         } else if !noteContent.isEmpty {
             let newNote = Note(dateKey: dateKey, content: noteContent)
+            newNote.taskSummary = summaryString
             modelContext.insert(newNote)
         }
         

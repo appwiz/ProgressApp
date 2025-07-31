@@ -13,6 +13,7 @@ final class Note {
     @Attribute(.unique) var dateKey: String // ISO8601 date format (YYYY-MM-DD)
     var content: String
     var lastModified: Date
+    var taskSummary: String = ""
     
     init(dateKey: String, content: String = "") {
         self.dateKey = dateKey
@@ -32,7 +33,7 @@ final class Note {
         guard let date = formatter.date(from: dateKey) else { return dateKey }
         
         let displayFormatter = DateFormatter()
-        displayFormatter.dateFormat = "MMM d, yyyy - EEEE" // Jul 29, 2025 - Tuesday
+        displayFormatter.dateFormat = "E, MMM d, yyyy" // Abbreviated day format
         return displayFormatter.string(from: date)
     }
 }
