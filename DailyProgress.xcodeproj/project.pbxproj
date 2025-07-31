@@ -24,18 +24,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BFB1BD3D2E3B39550005B77F /* Progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Progress.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFB1BD4E2E3B39560005B77F /* ProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFB1BD582E3B39560005B77F /* ProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB1BD3D2E3B39550005B77F /* DailyProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB1BD4E2E3B39560005B77F /* DailyProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB1BD582E3B39560005B77F /* DailyProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BFB1BD602E3B39560005B77F /* Exceptions for "Progress" folder in "Progress" target */ = {
+		BFB1BD602E3B39560005B77F /* Exceptions for "Progress" folder in "DailyProgress" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = BFB1BD3C2E3B39550005B77F /* Progress */;
+			target = BFB1BD3C2E3B39550005B77F /* DailyProgress */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -43,7 +43,7 @@
 		BFB1BD3F2E3B39550005B77F /* Progress */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				BFB1BD602E3B39560005B77F /* Exceptions for "Progress" folder in "Progress" target */,
+				BFB1BD602E3B39560005B77F /* Exceptions for "Progress" folder in "DailyProgress" target */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 		BFB1BD3E2E3B39550005B77F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFB1BD3D2E3B39550005B77F /* Progress.app */,
-				BFB1BD4E2E3B39560005B77F /* ProgressTests.xctest */,
-				BFB1BD582E3B39560005B77F /* ProgressUITests.xctest */,
+				BFB1BD3D2E3B39550005B77F /* DailyProgress.app */,
+				BFB1BD4E2E3B39560005B77F /* DailyProgressTests.xctest */,
+				BFB1BD582E3B39560005B77F /* DailyProgressUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFB1BD3C2E3B39550005B77F /* Progress */ = {
+		BFB1BD3C2E3B39550005B77F /* DailyProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFB1BD612E3B39560005B77F /* Build configuration list for PBXNativeTarget "Progress" */;
+			buildConfigurationList = BFB1BD612E3B39560005B77F /* Build configuration list for PBXNativeTarget "DailyProgress" */;
 			buildPhases = (
 				BFB1BD392E3B39550005B77F /* Sources */,
 				BFB1BD3A2E3B39550005B77F /* Frameworks */,
@@ -123,16 +123,16 @@
 			fileSystemSynchronizedGroups = (
 				BFB1BD3F2E3B39550005B77F /* Progress */,
 			);
-			name = Progress;
+			name = DailyProgress;
 			packageProductDependencies = (
 			);
 			productName = Progress;
-			productReference = BFB1BD3D2E3B39550005B77F /* Progress.app */;
+			productReference = BFB1BD3D2E3B39550005B77F /* DailyProgress.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BFB1BD4D2E3B39560005B77F /* ProgressTests */ = {
+		BFB1BD4D2E3B39560005B77F /* DailyProgressTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFB1BD662E3B39560005B77F /* Build configuration list for PBXNativeTarget "ProgressTests" */;
+			buildConfigurationList = BFB1BD662E3B39560005B77F /* Build configuration list for PBXNativeTarget "DailyProgressTests" */;
 			buildPhases = (
 				BFB1BD4A2E3B39560005B77F /* Sources */,
 				BFB1BD4B2E3B39560005B77F /* Frameworks */,
@@ -146,16 +146,16 @@
 			fileSystemSynchronizedGroups = (
 				BFB1BD512E3B39560005B77F /* ProgressTests */,
 			);
-			name = ProgressTests;
+			name = DailyProgressTests;
 			packageProductDependencies = (
 			);
 			productName = ProgressTests;
-			productReference = BFB1BD4E2E3B39560005B77F /* ProgressTests.xctest */;
+			productReference = BFB1BD4E2E3B39560005B77F /* DailyProgressTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BFB1BD572E3B39560005B77F /* ProgressUITests */ = {
+		BFB1BD572E3B39560005B77F /* DailyProgressUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFB1BD692E3B39560005B77F /* Build configuration list for PBXNativeTarget "ProgressUITests" */;
+			buildConfigurationList = BFB1BD692E3B39560005B77F /* Build configuration list for PBXNativeTarget "DailyProgressUITests" */;
 			buildPhases = (
 				BFB1BD542E3B39560005B77F /* Sources */,
 				BFB1BD552E3B39560005B77F /* Frameworks */,
@@ -169,11 +169,11 @@
 			fileSystemSynchronizedGroups = (
 				BFB1BD5B2E3B39560005B77F /* ProgressUITests */,
 			);
-			name = ProgressUITests;
+			name = DailyProgressUITests;
 			packageProductDependencies = (
 			);
 			productName = ProgressUITests;
-			productReference = BFB1BD582E3B39560005B77F /* ProgressUITests.xctest */;
+			productReference = BFB1BD582E3B39560005B77F /* DailyProgressUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFB1BD382E3B39550005B77F /* Build configuration list for PBXProject "Progress" */;
+			buildConfigurationList = BFB1BD382E3B39550005B77F /* Build configuration list for PBXProject "DailyProgress" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,9 +213,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFB1BD3C2E3B39550005B77F /* Progress */,
-				BFB1BD4D2E3B39560005B77F /* ProgressTests */,
-				BFB1BD572E3B39560005B77F /* ProgressUITests */,
+				BFB1BD3C2E3B39550005B77F /* DailyProgress */,
+				BFB1BD4D2E3B39560005B77F /* DailyProgressTests */,
+				BFB1BD572E3B39560005B77F /* DailyProgressUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		BFB1BD502E3B39560005B77F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BFB1BD3C2E3B39550005B77F /* Progress */;
+			target = BFB1BD3C2E3B39550005B77F /* DailyProgress */;
 			targetProxy = BFB1BD4F2E3B39560005B77F /* PBXContainerItemProxy */;
 		};
 		BFB1BD5A2E3B39560005B77F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BFB1BD3C2E3B39550005B77F /* Progress */;
+			target = BFB1BD3C2E3B39550005B77F /* DailyProgress */;
 			targetProxy = BFB1BD592E3B39560005B77F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,7 +478,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Progress.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Progress";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyProgress.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyProgress";
 			};
 			name = Debug;
 		};
@@ -497,7 +497,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Progress.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Progress";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyProgress.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyProgress";
 			};
 			name = Release;
 		};
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFB1BD382E3B39550005B77F /* Build configuration list for PBXProject "Progress" */ = {
+		BFB1BD382E3B39550005B77F /* Build configuration list for PBXProject "DailyProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB1BD642E3B39560005B77F /* Debug */,
@@ -547,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFB1BD612E3B39560005B77F /* Build configuration list for PBXNativeTarget "Progress" */ = {
+		BFB1BD612E3B39560005B77F /* Build configuration list for PBXNativeTarget "DailyProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB1BD622E3B39560005B77F /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFB1BD662E3B39560005B77F /* Build configuration list for PBXNativeTarget "ProgressTests" */ = {
+		BFB1BD662E3B39560005B77F /* Build configuration list for PBXNativeTarget "DailyProgressTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB1BD672E3B39560005B77F /* Debug */,
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFB1BD692E3B39560005B77F /* Build configuration list for PBXNativeTarget "ProgressUITests" */ = {
+		BFB1BD692E3B39560005B77F /* Build configuration list for PBXNativeTarget "DailyProgressUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB1BD6A2E3B39560005B77F /* Debug */,
