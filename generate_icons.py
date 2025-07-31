@@ -12,8 +12,8 @@ ICON_SIZES = [
 def create_progress_icon(size):
     """Create a progress-themed icon with a circular progress indicator and checkmark"""
     
-    # Create image with transparent background
-    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    # Create image with solid white background
+    img = Image.new('RGB', (size, size), (255, 255, 255))
     draw = ImageDraw.Draw(img)
     
     # Colors - modern iOS style
@@ -39,7 +39,7 @@ def create_progress_icon(size):
     # Background circle (lighter)
     draw.ellipse(
         [circle_margin, circle_margin, circle_margin + circle_size, circle_margin + circle_size],
-        outline=(255, 255, 255, 100),
+        outline=(255, 255, 255),
         width=max(1, size // 40)
     )
     
